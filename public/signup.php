@@ -1,6 +1,6 @@
 <?php
 // start session as early as possible (no output should appear before this)
-require_once __DIR__ . '/includes/session_config.inc.php';
+require_once '../includes/session_config.inc.php';
 
 if (!empty($_SESSION['signup_errors'])) {
     echo '<div class="text-red-600 mb-3">';
