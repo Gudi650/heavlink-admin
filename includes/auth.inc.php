@@ -9,6 +9,6 @@ if (empty($_SESSION['user_id'])) {
     // Provide a user-visible message on login page
     $_SESSION['login_errors'] = ['Please login to access the admin panel'];
 
-    header("Location: ../signup.php");
+    header("Location: ../index.php");
     exit();
 }
