@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Successful login: set session and redirect
     $_SESSION['user_id'] = $admin['id'];
-    header("Location: dashboard.php");
+    header("Location: ../dashboard.php");
     exit();
 
 } else{
