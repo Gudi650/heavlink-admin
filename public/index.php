@@ -27,7 +27,7 @@
 
         <form id="loginForm"
         class="bg-[#1E9E9E] flex justify-center items-center flex-col w-96 mx-5 mt-5 py-5 rounded opacity-75"
-        action="./backend-config-file/login.inc.php"
+        action="backend-config-file/login.inc.php"
         method="post"
         >
             <!-- Login title with white background -->

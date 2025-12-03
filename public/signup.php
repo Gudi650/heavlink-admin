@@ -27,7 +27,7 @@ if (!empty($_SESSION['signup_success'])) {
 </head>
 <body>
     <div class="flex justify-center items-center h-screen bg-gray-100">
-        <form action="./backend-config-file/signup.inc.php" method="post" class="bg-white p-6 rounded shadow-md w-96">
+        <form action="backend-config-file/signup.inc.php" method="post" class="bg-white p-6 rounded shadow-md w-96">
             <h2 class="text-2xl font-semibold mb-4">Create Admin Account</h2>
 
             

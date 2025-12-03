@@ -1,6 +1,6 @@
 <?php
 // Require authentication before rendering any output
-include_once __DIR__ . '/includes/auth.inc.php';
+include_once '../includes/auth.inc.php';
 
 
 ?>
