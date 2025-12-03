@@ -8,6 +8,6 @@ if (empty($_SESSION['user_id'])) {
     // Provide a user-visible message on login page
     $_SESSION['login_errors'] = ['Please login to access the admin panel'];
     // Redirect to admin login (relative path expected from top-level admin pages)
-    header('Location: login.php');
+    header('Location: index.php');
     exit();
 }
