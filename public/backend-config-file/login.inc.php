@@ -1,9 +1,9 @@
 <?php
 // Start session before any output
-require_once __DIR__ . '/../includes/session_config.inc.php';
+require_once __DIR__ . '/../../includes/session_config.inc.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    require_once __DIR__ . '/../includes/dbh.inc.php';
+    require_once __DIR__ . '/../../includes/dbh.inc.php';
 
     $email = trim($_POST['email'] ?? '');
     $password = $_POST['password'] ?? '';
