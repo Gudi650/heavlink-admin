@@ -8,6 +8,7 @@ if (empty($_SESSION['user_id'])) {
 
     // Provide a user-visible message on login page
     $_SESSION['login_errors'] = ['Please login to access the admin panel'];
+<<<<<<< HEAD
 
     // Allow overriding the login URL by defining ADMIN_LOGIN_URL (e.g. in a config file)
     if (defined('ADMIN_LOGIN_URL') && !empty(constant('ADMIN_LOGIN_URL'))) {
@@ -22,5 +23,9 @@ if (empty($_SESSION['user_id'])) {
     }
 
     header('Location: ' . $loginUrl);
+=======
+    // Redirect to admin login (relative path expected from top-level admin pages)
+    header('Location: login.php');
+>>>>>>> parent of 5e9c0ca (changed the index and login naming convenctions)
     exit();
 }

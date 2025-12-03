@@ -19,5 +19,5 @@ session_start();
 session_regenerate_id(true);
 
 // Redirect to login page
-header('Location: ../dashboard.php');
+header('Location: ../login.php');
 exit();
