@@ -125,7 +125,7 @@
             <p class="pb-2">
                 Dont have an account?
                 <span>
-                    <a href="<?php echo __DIR__.'/signup.php'; ?>" class="text-white ml-2">Sign Up</a>
+                    <a href="<?php echo 'signup.php'; ?>" class="text-white ml-2">Sign Up</a>
                 </span>
             </p>
         </form>
