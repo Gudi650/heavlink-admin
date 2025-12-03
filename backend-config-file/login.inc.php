@@ -41,16 +41,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($errors) {
         $_SESSION['login_errors'] = $errors;
-        header("Location: ../login.php");
+        header("Location: ../index.php");
         exit();
     }
 
     // Successful login: set session and redirect
     $_SESSION['user_id'] = $admin['id'];
-    header("Location: ../index.php");
+    header("Location: ../dashboard.php");
     exit();
 
 } else {
-    header("Location: ../login.php");
+    header("Location: ../index.php");
     exit();
 }

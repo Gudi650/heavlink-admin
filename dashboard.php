@@ -18,7 +18,7 @@ include_once __DIR__ . '/includes/auth.inc.php';
 <body>
 
     <?php
-    $mainContentFile = "./main-content-files/main-content-index.php";
+    $mainContentFile = "./main-content-files/main-content-dashboard.php";
     include "templates/sidenav.php";
     ?>
 

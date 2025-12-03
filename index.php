@@ -2,6 +2,12 @@
 // start session as early as possible (no output before this)
 require_once __DIR__ . '/includes/session_config.inc.php';
 
+// If user is already logged in, send them to the dashboard
+if (!empty($_SESSION['user_id'])) {
+    header('Location: dashboard.php');
+    exit();
+}
+
 if (!empty($_SESSION['login_errors'])) {
     echo '<div class="text-red-500 mb-3">';
     foreach ($_SESSION['login_errors'] as $error) {
