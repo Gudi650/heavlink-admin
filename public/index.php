@@ -1,7 +1,7 @@
 <?php
 
     // start session as early as possible (no output before this)
-    require_once __DIR__ . '/includes/session_config.inc.php';
+    require_once __DIR__ . '/../includes/session_config.inc.php';
 
 ?>
 
