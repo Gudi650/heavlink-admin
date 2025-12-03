@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($errors) {
         $_SESSION['login_errors'] = $errors;
-        header("Location: ../index.php");
+        header("Location: ../dashboard.php");
         exit();
     }
 
@@ -51,6 +51,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit();
 
 } else {
-    header("Location: ../index.php");
+    header("Location: ../dashboard.php");
     exit();
 }
