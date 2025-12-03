@@ -1,5 +1,6 @@
 <?php
 
+$dbn = "mysql:host=localhost;dbname=dopscotz_church;charset=utf8mb4";
 $username = 'heavlink_user';
 $password = 'supersecret123';
 $dsn="mysql:host=heavlink-mysql;dbname=heavlink;charset=utf8mb4";
@@ -14,4 +15,3 @@ try {
 } catch (PDOException $e) {
     die("Database connection failed: " . $e->getMessage());
 }
-?>

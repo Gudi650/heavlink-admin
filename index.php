@@ -1,17 +1,9 @@
 <?php
-// start session as early as possible (no output before this)
-require_once __DIR__ . '/includes/session_config.inc.php';
 
-if (!empty($_SESSION['login_errors'])) {
-    echo '<div class="text-red-500 mb-3">';
-    foreach ($_SESSION['login_errors'] as $error) {
-        echo htmlspecialchars($error) . '<br>';
-    }
-    echo '</div>';
-    unset($_SESSION['login_errors']);
-}
+    // start session as early as possible (no output before this)
+    require_once __DIR__ . '/includes/session_config.inc.php';
+
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,6 +22,7 @@ if (!empty($_SESSION['login_errors'])) {
         style="background-image: url('/pngwing.com.png'); background-size: cover; background-position: center;"
         class="flex justify-center items-center h-screen fixed inset-0 min-h-screen w-full bg-gray-200"
     >
+
         <!-- Login form container with teal background and opacity -->
 
         <form id="loginForm"
@@ -40,6 +33,16 @@ if (!empty($_SESSION['login_errors'])) {
             <!-- Login title with white background -->
             <h2 class="bg-white text-black px-4 py-1 rounded-lg text-xl mb-7">Login</h2>
             
+            <?php
+                if (!empty($_SESSION['login_errors'])) {
+                    echo '<div class="text-red-500 mb-3">';
+                    foreach ($_SESSION['login_errors'] as $error) {
+                        echo htmlspecialchars($error) . '<br>';
+                    }
+                    echo '</div>';
+                    unset($_SESSION['login_errors']);
+                }
+            ?>
 
             
             <!-- Email input field with user icon -->

@@ -1,10 +1,9 @@
 <?php
 // Start session before any output
-require_once '../includes/session_config.inc.php';
+require_once __DIR__ . '/../includes/session_config.inc.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    
-    require_once '../includes/dbh.inc.php';
+    require_once __DIR__ . '/../includes/dbh.inc.php';
 
     $email = trim($_POST['email'] ?? '');
     $password = $_POST['password'] ?? '';
@@ -41,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($errors) {
         $_SESSION['login_errors'] = $errors;
-        header("Location: ../dashboard.php");
+        header("Location: ../index.php");
         exit();
     }
 
@@ -50,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header("Location: ../dashboard.php");
     exit();
 
-} else {
-    header("Location: ../dashboard.php");
+} else{
+    header("Location: ../index.php");
     exit();
 }

@@ -2,7 +2,9 @@
 // Require authentication before rendering any output
 include_once __DIR__ . '/includes/auth.inc.php';
 
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
